@@ -1,0 +1,38 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "price",
+            "fieldType": "Double",
+            "fieldValidateRules": [
+                "required",
+                "min"
+            ],
+            "fieldValidateRulesMin": "1"
+        },
+        {
+            "fieldName": "isbn",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "author",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "publishDate",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "counts",
+            "fieldType": "Integer"
+        }
+    ],
+    "changelogDate": "20160911085326",
+    "dto": "mapstruct",
+    "service": "serviceImpl",
+    "entityTableName": "book",
+    "pagination": "pagination",
+    "microserviceName": "cms",
+    "searchEngine": "elasticsearch"
+}

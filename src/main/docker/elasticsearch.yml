@@ -1,0 +1,10 @@
+version: '2'
+services:
+    cms-elasticsearch:
+        container_name: cms-elasticsearch
+        image: elasticsearch:2.3.5
+        # volumes:
+        #     - ~/volumes/jhipster/cms/elasticsearch/:/usr/share/elasticsearch/data/
+        ports:
+            - 9200:9200
+            - 9300:9300
